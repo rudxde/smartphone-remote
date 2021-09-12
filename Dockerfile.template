@@ -1,0 +1,8 @@
+FROM base as build
+COPY --slim package.json ./
+RUN npm i
+COPY package.json ./
+COPY tsconfig.json ./
+COPY ./src/ ./src/
+RUN npm run build
+ENTRYPOINT ["npm", "start"]

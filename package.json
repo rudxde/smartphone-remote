@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "lerna-dockerize": "lerna-dockerize"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "lerna-dockerize": "^0.8.1"
+  }
+}
