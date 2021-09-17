@@ -6,9 +6,9 @@ async function main() {
     //     top-level await as of Node 12.
     try {
         await electronInstaller.createWindowsInstaller({
-            //   appDirectory: '/tmp/build/my-app-64',
             title:"smartphoneRemote",
             name:"smartphoneRemote",
+            description: "Desktop client app for the smartphone remote",
             appDirectory: './smartphone-remote-desktop-client-win32-x64',
             outputDirectory: './smartphone-remote-desktop-client-installer',
             authors: 'rudxde',
