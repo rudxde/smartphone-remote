@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -18,6 +19,7 @@ import { BrowserModule } from '@angular/platform-browser';
       { path: 'desktop', loadChildren: async () => (await import('../desktop/desktop.module')).DesktopModule },
       { path: 'remote', loadChildren: async () => (await import('../remote/remote.module')).RemoteModule },
     ]),
+    BrowserAnimationsModule,
   ],
   bootstrap: [ AppComponent ]
 })

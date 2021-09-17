@@ -1,0 +1,66 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    gap: 8px;
+    justify-items: center;
+    align-items: center;
+    .title {
+        grid-column: 2;
+        grid-row: 1;
+        .icon {
+            margin-right: 4px;
+        }
+    }
+    .back {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .fullscreen {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .escape {
+        grid-column: 3;
+        grid-row: 2;
+        align-self: start;
+    }
+    .play {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        height: 40vh;
+        width: 40vh;
+    }
+    .backw {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .forw {
+        grid-column: 3;
+        grid-row: 4;
+    }
+    .volup {
+        grid-column: 2;
+        grid-row: 4;
+        width: 80%;
+        height: 100%;
+    }
+    .voldown {
+        grid-column: 2;
+        grid-row: 5;
+        width: 80%;
+        height: 100%;
+    }
+    .mute {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .skip {
+        grid-column: 3;
+        grid-row: 5;
+    }
+}

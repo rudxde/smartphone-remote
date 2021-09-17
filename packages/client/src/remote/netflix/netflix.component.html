@@ -1,0 +1,18 @@
+<div class="grid">
+    <mat-chip-list class="title">
+        <mat-chip color="warn" selected>
+            <mat-icon class="icon">live_tv</mat-icon>
+            Netflix
+        </mat-chip>
+    </mat-chip-list>
+    <button mat-icon-button (click)="back()" class="back"><mat-icon>chevron_left</mat-icon></button>
+    <button mat-icon-button (click)="fullscreen()" class="fullscreen"><mat-icon>open_in_full</mat-icon></button>
+    <button mat-icon-button (click)="escape()" class="escape"><mat-icon>close</mat-icon></button>
+    <button mat-fab color="primary" (click)="play()" class="play"><mat-icon>play_arrow</mat-icon></button>
+    <button mat-icon-button (click)="backw()" class="backw"><mat-icon>replay_10</mat-icon></button>
+    <button mat-icon-button (click)="forw()" class="forw"><mat-icon>forward_10</mat-icon></button>
+    <button mat-raised-button (click)="volup()" class="volup"><mat-icon>volume_up</mat-icon></button>
+    <button mat-raised-button (click)="voldown()" class="voldown"><mat-icon>volume_down</mat-icon></button>
+    <button mat-stroked-button (click)="mute()" class="mute"><mat-icon>volume_off</mat-icon></button>
+    <button mat-stroked-button (click)="skip()" class="skip"><mat-icon>redo</mat-icon></button>
+</div>
