@@ -45,6 +45,7 @@ export function filterCommands(command: string): string {
         case Commands.X:
         case Commands.Y:
         case Commands.Z:
+        case Commands.VK_F5:
         case Commands.VK_F11:
         case Commands.VK_OEM_COMMA:
         case Commands.VK_OEM_PERIOD:

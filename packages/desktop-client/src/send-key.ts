@@ -76,6 +76,7 @@ export enum SendKeyCodes {
     X = 0x58,
     Y = 0x59,
     Z = 0x5A,
+    VK_F5 = 0x74,
     VK_F11 = 0x7A,
     VK_OEM_COMMA = 0xBC,
     VK_OEM_PERIOD = 0xBE,

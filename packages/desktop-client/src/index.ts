@@ -94,6 +94,7 @@ function connect(session: string): Promise<void> {
                         case Commands.X: sendKey.sendKey(SendKeyCodes.X); break;
                         case Commands.Y: sendKey.sendKey(SendKeyCodes.Y); break;
                         case Commands.Z: sendKey.sendKey(SendKeyCodes.Z); break;
+                        case Commands.VK_F5: sendKey.sendKey(SendKeyCodes.VK_F5); break;
                         case Commands.VK_F11: sendKey.sendKey(SendKeyCodes.VK_F11); break;
                         case Commands.VK_OEM_COMMA: sendKey.sendKey(SendKeyCodes.VK_OEM_COMMA); break;
                         case Commands.VK_OEM_PERIOD: sendKey.sendKey(SendKeyCodes.VK_OEM_PERIOD); break;

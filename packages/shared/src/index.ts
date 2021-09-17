@@ -46,6 +46,7 @@ export enum Commands {
     X = "X",
     Y = "Y",
     Z = "Z",
+    VK_F5 = "VK_F5",
     VK_F11 = "VK_F11",
     VK_OEM_COMMA = "VK_OEM_COMMA",
     VK_OEM_PERIOD = "VK_OEM_PERIOD",
