@@ -9,6 +9,7 @@ import { join } from 'path';
 interface IConfig {
     pageUrl: string;
     wsUrl: string;
+    sessionId?: string;
 }
 
 let config: IConfig = {
@@ -199,7 +200,7 @@ async function main(): Promise<void> {
         config = JSON.parse(readFileSync(configFile).toString());
     }
 
-    const sessionId = v4();
+    const sessionId = config.sessionId ?? v4();
     console.log(sessionId);
     app.on("ready", () => {
         createWindow(sessionId);
