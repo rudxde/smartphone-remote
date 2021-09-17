@@ -15,6 +15,7 @@ export class RemoteService {
   private webSocketIn$: Subject<string> = new Subject();
   private webSocketOut$: Subject<string> = new Subject();
   constructor() { 
+    (window as any)['RemoteService'] = this;
   }
 
 
