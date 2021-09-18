@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { BrowserComponent } from './browser/browser.component';
+import { OverviewComponent } from './overview/overview.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { BrowserComponent } from './browser/browser.component';
     OfflineComponent,
     NetflixComponent,
     BrowserComponent,
+    OverviewComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { BrowserComponent } from './browser/browser.component';
     MatIconModule,
     MatChipsModule,
     RouterModule.forChild([
-      { path: ':id', component: ButtonsComponent },
+      { path: ':id', component: OverviewComponent },
+      { path: ':id/old', component: ButtonsComponent },
       { path: ':id/browser', component: BrowserComponent },
       { path: ':id/netflix', component: NetflixComponent },
     ])
