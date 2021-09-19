@@ -15,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', pathMatch: 'full', redirectTo: 'home' },
+      { path: '', pathMatch: 'full', redirectTo: 'download' },
+      { path: 'download', loadChildren: async () => (await import('../download/download.module')).DownloadModule },
       { path: 'desktop', loadChildren: async () => (await import('../desktop/desktop.module')).DesktopModule },
       { path: 'remote', loadChildren: async () => (await import('../remote/remote.module')).RemoteModule },
     ]),

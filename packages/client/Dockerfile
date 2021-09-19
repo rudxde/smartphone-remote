@@ -7,7 +7,7 @@ COPY tsconfig.app.json ./
 COPY angular.json ./
 COPY ./src/ ./src/
 RUN npm run build:prod
-RUN cp ./node_modules/smartphone-remote-desktop-client/smartphone-remote-desktop-client-installer/Setup.exe ./dist/smartphone-remote-client/assets/
+RUN install -D ./node_modules/smartphone-remote-desktop-client/smartphone-remote-desktop-client-installer/* -t ./dist/smartphone-remote-client/assets/
 
 FROM nginx:alpine as prod
 COPY ./nginx.conf /etc/nginx/nginx.conf
